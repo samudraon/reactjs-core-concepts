@@ -1,25 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
 
+/* Variable */
+const num = 5555;
+const singer = { name: 'Dr. Mahfuz', job: 'Singer' };
+const singer2 = {
+  name: 'Eva Rahman',
+  job: 'Singer2'
+}
+
+/* CSS Style */
+const singerStyle = {
+  color: 'purple',
+  backgroundColor: 'aquamarine'
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <h5>New Component. YAY!!</h5>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
     </div>
   );
+}
+
+function Person() {
+  return (
+    <div className='person'>
+      <h1>Shakib Al Hasan</h1>
+      <p>Profession: Cricketer</p>
+    </div>
+  )
+}
+
+function Friend() {
+  return (
+    <div className='container'>
+      <h3>Name: Salman Khan</h3>
+      <p>job: maramari</p>
+    </div>
+  )
 }
 
 export default App;
